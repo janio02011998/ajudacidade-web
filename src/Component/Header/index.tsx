@@ -6,7 +6,7 @@ import goBack from '../../assets/goBack.svg';
 import { Link, useHistory } from 'react-router-dom';
 import AdminIcon from '../../assets/icons/camacan.jpg';
 // import { FiLogOut } from 'react-icons/fi';
-import { motion } from "framer-motion";
+// import { motion } from "framer-motion";
 
 interface HeaderProps {
     title?: string;
@@ -33,10 +33,11 @@ const Header: React.FC<HeaderProps> = ({ title, rota, data }) => {
     return (
         <div className="header-page">
             <div className="header-top-bar">
-                <motion.div className="circular-content"
+                {/* <motion.div className="circular-content"
                     animate={{ scale: 2 }}
                     transition={{ duration: 0.5 }}
-                >
+                > */}
+                <div className="circular-content">
                     {data === 'admin' ? (
                         <Link to={{
                             pathname: `${rota}`,
@@ -56,19 +57,23 @@ const Header: React.FC<HeaderProps> = ({ title, rota, data }) => {
                                 <img src={goBack} alt="Logo Ajuda Cidade" />;
                             </Link>
                         )}
-                </motion.div>
+                    {/* </motion.div> */}
+                </div>
 
                 {data !== null && data !== 'admin' ? (
                     <>
                         <h1 className="title">{title}</h1>
                         <div className="dropdown">
 
-                            <motion.div className="circle-div"
+                            {/* <motion.div className="circle-div"
                                 animate={{ scale: 2 }}
                                 transition={{ duration: 0.5 }}
-                            >
+                            > */}
+                            <div className="circle-div">
                                 <img src={data.picture.data.url} alt="Foto do usúario" className="image-login" />
-                            </motion.div>
+
+                            </div>
+                            {/* </motion.div> */}
                             <div className="dropdown-content">
                                 <p onClick={handleLogout} >Sair</p>
                             </div>
@@ -80,12 +85,12 @@ const Header: React.FC<HeaderProps> = ({ title, rota, data }) => {
                             {data === 'admin' ? (
                                 <>
                                     <div className="dropdown">
-                                        <motion.div
+                                        {/* <motion.div
                                             animate={{ scale: 2 }}
                                             transition={{ duration: 0.5 }}
-                                        >
+                                        > */}
                                             <img src={AdminIcon} alt="Logo Ajuda Cidade" className="image-login" />
-                                        </motion.div>
+                                        {/* </motion.div> */}
                                         <div className="dropdown-content">
                                             <p onClick={handleLogout} >Sair</p>
                                         </div>
@@ -93,12 +98,12 @@ const Header: React.FC<HeaderProps> = ({ title, rota, data }) => {
                                 </>
 
                             ) : (
-                                    <motion.div
-                                        animate={{ scale: 2 }}
-                                        transition={{ duration: 0.5 }}
-                                    >
-                                        <img src={logo} alt="Logo Ajuda Cidade" />
-                                    </motion.div>
+                                <img src={logo} alt="Logo Ajuda Cidade" />
+                                    // <motion.div
+                                    //     animate={{ scale: 2 }}
+                                    //     transition={{ duration: 0.5 }}
+                                    // >
+                                        // {/* </motion.div> */}
                                 )}
                         </>
                     )}
