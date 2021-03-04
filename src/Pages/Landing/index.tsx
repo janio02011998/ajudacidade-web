@@ -15,7 +15,7 @@ import GoogleLogin from 'react-google-login';
 import { FormEvent } from 'react';
 import api from '../../services/api';
 
-// import { motion } from "framer-motion";
+import { motion } from "framer-motion";
 
 interface Accounts {
     id: number;
@@ -179,7 +179,7 @@ export default function Landing() {
                 </Popup>
             </div>
             <div className="content">
-                {/* <motion.div className="content-top"
+                <motion.div className="content-top"
                     transition={{ delay: 0, duration: 2 }}
                     variants={{
                         show: { opacity: 1, y: '0' },
@@ -187,12 +187,12 @@ export default function Landing() {
                     }}
                     initial="hidden"
                     animate="show"
-                > */}
-                <div className="content-top">
+                >
+                {/* <div className="content-top"> */}
                     <img alt="Logo ajuda cidade" src={logo} />
                     <h1 className="titulo">O novo jeito de admnistrar e ajudar a sua cidade</h1>
-                </div>
-                {/* </motion.div> */}
+                {/* </div> */}
+                </motion.div>
                 <div className="section-block">
                     <div className="input-block">
 
