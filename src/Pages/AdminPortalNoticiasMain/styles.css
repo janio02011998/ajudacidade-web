@@ -1,0 +1,102 @@
+ .container-portalAdmin {
+    width: 100vw;
+    /* max-height: auto;
+    min-height: 100vh; */
+    min-height: 100vh;
+    background-image: linear-gradient(180.02deg, #F0C146 0.01%, rgba(95, 231, 58, 0.69) 103.5%);
+    background-repeat: no-repeat;
+}
+
+.container-portalAdmin .header-page .header-top-bar {
+    margin-bottom: 0.7rem;
+}
+
+.content-portalAdmin {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.content-portalAdmin h2 {
+    color: #ffffff;
+    font: 'Roboto';
+    font-size: 3rem;
+    text-shadow: 0.2rem 0.1rem #1eff00;
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.create-noticia-button {
+    position: fixed;
+    right: 0;
+      
+    width: 2rem;
+    height: 2rem;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    margin-right: 0.2rem;
+
+    cursor: pointer;
+    background: linear-gradient(90deg, rgba(127, 202, 33, 0.8) 0%, #105200 100%);;
+    border-radius: 10px;
+    color: #FFFFFF;
+
+    font-weight: 700;
+    text-decoration: none;
+    
+    transition: background-color 0.2s;
+}
+
+.create-noticia-button:hover {
+    background: #36CF82;
+}
+
+@media(min-width: 540px) {
+    .create-noticia-button {
+        width: 3rem;
+        height: 3rem;
+        
+        margin-right: 0.5rem;
+    }
+}
+
+@media (min-width: 700px) {
+    .content-portalAdmin h2 {
+        font-size: 5rem;   
+    }
+
+    .create-noticia-button {
+        width: 15.5rem;
+        height: 6.5rem;
+        
+        margin-right: 0.2rem;
+        margin-top: 4rem;
+
+        font-family: "Roboto";
+        font-size: 1.5rem;
+    }
+
+    .create-noticia-button :nth-child(n) {
+        margin-left: 0.7rem;
+    }
+}
+
+@media(min-width: 1000px) {}
+
+@media(min-width: 1500px) {
+    .container-portalAdmin {
+        width: 100vw;
+    }   
+
+    .content-portalAdmin {
+        min-width: 100vw;
+    }
+
+    .create-noticia-button {
+        margin-right: 4rem;
+    }
+}

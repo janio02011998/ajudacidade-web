@@ -1,0 +1,222 @@
+/* Container with the full subject of the component */
+.container-noticia {
+    width: 85vw;
+    /* height: 19.5rem; */
+    height: 100%;
+    
+    background-color: #F4F4F4;
+    
+    margin: 1rem auto;
+    padding-bottom: 1rem;
+    border-radius: 1rem;
+
+    display: grid;
+}
+
+/* Content the news */
+.content-noticia {
+    display: flex;
+    flex-direction: row; 
+}
+
+/* Div with the title, the content and images of the news */
+.content-content-noticia {
+    display: flex;
+    flex-direction: row;
+}
+
+/* Image of the news */
+.image img{
+    width: 24vw;
+    height: 10.8rem;
+    border-radius: 20%;
+
+    margin-top: 1.2rem;
+}
+
+/* Content with the title and the text of the news */
+.content-content-noticia {
+    margin: 1rem 0.5rem 0rem 1rem;
+    text-align: justify;
+}
+
+.content-noticia .content-content-noticia  .content {
+    margin-top: 0.5rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.content-noticia .content h3 {
+    margin-top: 1rem;
+    font-size: 1.8rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.content p {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.7rem;
+}
+
+.content button {
+    background-color: transparent;
+    border: none;
+    color: #2fd42f;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.content button:hover {
+    color: var(--color-gradient-green-btn-text);
+}
+
+/* Div with the Edit and Delete buttons */
+.content-buttons {
+    
+}
+
+/* Div with the buttons being showed in the part of Admin News */
+.content-noticia .content-buttons .edit-remove-admin {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    text-align: right;
+
+    margin-top: 0.3rem;
+    right: 3.5rem;
+}
+
+.edit-remove-admin :nth-child(n) {
+    margin: 0 0.1rem;
+}
+
+.edit-remove-admin .iconFiEdit:hover {
+    cursor: pointer;
+    color: #2fd42f;
+}
+
+.edit-remove-admin .iconFiDelete {
+    color: #ce3333;
+}
+
+.edit-remove-admin .iconFiDelete:hover {
+    cursor: pointer;
+    color: #ff0000;
+}
+
+/* Style of Edit Button */
+.iconFiEdit {
+
+}
+
+/* Style of Delete Button */
+.iconFiDelete {
+
+}
+
+/* Div without to show the buttons */
+.no-edit-remove-admin {
+    display: none;
+}
+
+/* Div with the like, comment and favorite buttons */
+.social-noticia {
+    display: flex;
+    flex-direction: row;
+}
+
+.social-noticia p {
+    font-size: 1.6rem;
+    margin: 1rem 0.5rem;
+}
+
+/* Styles about the screen above or equal to 540px */
+@media(min-width: 540px) {
+    .container-noticia {
+        height: 17rem;
+    }
+
+    .content-noticia .content-buttons .edit-remove-admin {
+        right: 5.5rem;
+    }
+}
+
+/* Styles about the screen above or equal to 700px */
+@media(min-width: 700px) {
+    .container-noticia {
+        width: 60vw;
+        height: 20rem;
+    }
+    
+    .content-noticia .content-buttons .edit-remove-admin {
+        text-align: center;
+        right: 17rem;
+    }
+    
+    .image img{
+        width: 9vw;
+        height: 12vh;
+        border-radius: 20%;
+    }
+    
+    .content-noticia .content h3 {
+        font-size: 2.2rem;
+    }
+    
+    .content p {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 1.8rem;
+    }
+    
+    .social-noticia p {
+        font-size: 1.9rem;
+        margin-top: 0.8rem;
+    }
+    
+}
+
+/* Styles about the screen above or equal to 1000px */
+@media(min-width: 1000px) {
+    .container-noticia {
+        width: 70vw;
+        height: 100%;
+        margin: 1.2rem 0 2rem 0;
+        padding-bottom: 1rem;
+    }
+    
+    .image img{
+        width: 13vw;
+        height: 14vh;
+        border-radius: 20%;
+        margin: 1.5rem;
+    }
+    
+    .content-noticia .content h3 {
+        margin-top: 1rem;
+        font-size: 2.8rem;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    
+    .content p {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 2.5rem;
+    }
+    
+    .content-noticia .content-buttons .edit-remove-admin {
+        text-align: center;
+        right: 17rem;
+    }
+}
+
+/* Styles about the screen above or equal to 1500px */
+@media(min-width: 1500px) {
+    .container-noticia {
+        width: 70vw;
+        height: 16.5rem;
+        margin: 1.2rem 0 2rem 0;
+    }
+
+    .content-noticia .content-buttons .edit-remove-admin {
+        /* text-align: center; */
+        right: 25rem;
+    }
+}

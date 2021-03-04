@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container-noticiaInfo {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: 80%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 8rem auto;
+    background-color: #f5f9f9;
+    border-radius: 0.5em;
+}
+
+.content-noticiaInfo {
+    position: absolute;
+    left: 3%;
+    right: 3%;
+    top: 27%;
+    bottom: 5%;
+    margin: -2rem auto 0;
+    border-radius: 20px;
+    background-color: #d4d4d4;
+
+    height: 35rem;
+}
+
+.container-noticiaInfo .header-noticia {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 1.5rem 1.5rem;
+}
+
+.header-noticia h3 {
+    margin: 1.5rem 2.8rem;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.7rem;
+    text-align: center;
+}
+
+.header-noticia > img {
+    margin: 0;
+    width: 100px;
+    height: 80px;
+    border-radius: 2em;
+}
+
+.close {
+    /* text-align: right; */
+    margin-top: -0.3rem;
+    font-size: 2rem;
+}
+
+.close:hover {
+    color: #ff0000;
+    cursor: pointer;
+}
+
+.content-noticiaInfo .content p{
+    height: 19rem;
+}
+
+.content-noticiaInfo .content p{
+    max-height: 100%;
+
+    margin: 0rem 0.7rem 0rem;
+    padding-bottom: 1rem;
+    text-align: justify;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    color: #000;
+    /* height: 20rem; */
+    /* max-height: 25rem; */
+
+    overflow: auto;
+}
+
+.buttonsSharing {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    bottom: -5%;
+    left: 1rem;
+    /* margin-top: 42.2rem; */
+    /* margin-left: 2rem; */
+}
+
+.buttonsSharing .react-share__ShareButton {
+    margin-right: 0.5rem;
+}
+
+.buttonsSharing .react-share__ShareButton .facebookButton {
+    width: 3rem;
+    height: 3rem;
+}
+
+.buttonsSharing .react-share__ShareButton .whatsappButton {
+    width: 3rem;
+    height: 3rem;
+}
+
+@media(min-width: 700px) {
+    .container-noticiaInfo {
+        width: 50%;
+    }
+
+    .content-noticiaInfo {
+        position: absolute;
+        left: 3%;
+        right: 3%;
+        top: 25%;
+        bottom: 8%;
+
+        /* height: 40rem; */
+        height: 45rem;
+    }
+
+    .header-noticia h3 {
+        font-size: 2.5rem;
+        margin-top: 3.5rem;
+    }
+
+    .header-noticia img {
+        width: 150px;
+        height: 120px;
+        border-radius: 2em;
+
+        margin-left: 0;
+        margin-bottom: 1rem;
+    }
+
+    .header-noticia {
+        margin: 2rem 3.5rem;
+    }
+
+    .content-noticiaInfo > img {
+        width: 100%;
+        height: 100%;
+        border-radius: 2em;
+    }
+
+    .content-noticiaInfo .content p{
+        overflow: auto;
+        overflow-y: scroll;
+        height: 14rem;
+        margin: 13rem 0.7rem 0rem;
+    }
+
+    ::-webkit-scrollbar {
+        width: 0px; 
+        background: transparent; 
+    }
+    
+    .buttonsSharing {
+        margin-top: 46.3rem;
+        margin-left: 1rem;
+    }
+
+    .buttonsSharing .react-share__ShareButton {
+        margin-right: 1.3rem;
+    }
+
+    .buttonsSharing .react-share__ShareButton .facebookButton {
+        width: 5rem;
+        height: 5rem;
+    }
+
+    .buttonsSharing .react-share__ShareButton .whatsappButton {
+        width: 5rem;
+        height: 5rem;
+    }
+}

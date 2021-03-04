@@ -1,0 +1,302 @@
+body {
+    background: var(--color-background-colabore);
+}
+
+.colabore-page .colabore-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 12px;
+}
+.colabore-page .colabore-main .title {
+    color: #FFFFFF;
+    font-size: 18px;
+    margin-bottom: 8px;
+    text-align: center;
+}
+
+.colabore-page .colabore-main .container-grid {
+    max-width: 300px;
+    margin: 0px 20px 20px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background: #eee6e6;
+    border-radius: 8px;
+}
+
+.colabore-page .colabore-main .container-grid .legend-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 6px 18px 6px;
+}
+
+.colabore-page .colabore-main .legend-icons img {
+    width: 24px;
+    height: 24px;
+    margin-right: 4px;
+}
+
+.colabore-page .colabore-main .checkbox-switch {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.colabore-page .colabore-main .map-popup {
+    margin-bottom: 5px;
+}
+
+.colabore-page .colabore-main .popup-colabore {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.colabore-page .colabore-main .popup-colabore p {
+    text-align: justify;
+    margin-top: 6px;
+    margin-bottom: 0px;
+}
+
+.colabore-page .colabore-main .popup-colabore label {
+    font-size: 16px;
+    display: flex;
+    color: #8b8b8b;
+    line-height: 24px;
+}
+
+.colabore-page .colabore-main .popup-colabore .images-container-popup {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.colabore-page .colabore-main .images-container-popup img {
+    width: 45px;
+    height: 50px;
+    margin: 10px 2px 0px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.popup-content {
+    max-width: 95%;
+    height: auto;
+}
+
+.popup-content img {
+    margin: auto;
+    width: 100%;
+    height: 400px;
+}
+
+.colabore-page .colabore-main fieldset {
+    border: 0;
+}
+
+.items-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+    list-style: none;
+}
+
+.items-grid li {
+    background: #f5f5f5;
+    border: 2px solid #f5f5f5;
+    height: 64px;
+    border-radius: 8px;
+    padding: 18px 12px 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+}
+
+.items-grid img {
+    width: 32px;
+    height: 32px;
+}
+
+.items-grid li span {
+    flex: 1;
+    margin-top: 12px;
+    display: flex;
+    align-items: center;
+    /* color: var(--title-color); */
+}
+
+.items-grid li.selected {
+    background: #e1faec;
+    border: 2px solid #34cb79;
+}
+
+.colabore-page .mymap {
+    width: 100%;
+    height: 400px;
+    border-radius: 8px;
+}
+
+.colabore-page .create-notification {
+    margin-top: 10px;
+    width: 64px;
+    height: 64px;
+    /* background:#15c3d6; */
+    background: var(--color-gradient-yellow1);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.2s;
+}
+
+.colabore-page .colabore-main .images-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.colabore-page .colabore-main form button {
+    width: 64px;
+    height: 42px;
+    background: #34cb79;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 12px;
+    border: 0;
+    align-self: center;
+    margin-top: 12px;
+    margin-left: 105px;
+    transition: background-color 0.2s;
+    cursor: pointer;
+}
+
+.colabore-page .colabore-main form button:hover {
+    background: #2fb86e;
+}
+
+.colabore-page .colabore-main form button a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked+.slider {
+    background-color: #2196F3;
+}
+
+input:focus+.slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+@media (max-width: 280px) {
+    .colabore-page .colabore-main .container-grid {
+        max-width: 260px;
+    }
+    .colabore-page .colabore-main .container-grid .legend-icons {
+        padding: 12px;
+    }
+
+}
+
+@media (min-width: 900px) {
+    .colabore-page .colabore-main {
+        margin-top: 20px;
+    }
+    .colabore-page .mymap {
+        width: 60%;
+        height: 500px;
+        flex-direction: row;
+    }
+    .colabore-page .create-notification {
+        position: absolute;
+        bottom: 32px;
+        right: 16rem;
+    }
+    .popup-content {
+        max-width: 75%;
+        /* max-width: 1200px; */
+        height: auto;
+    }
+
+    .popup-content img{
+        height: 600px;
+    }
+    
+    [role='tooltip'].popup-content {
+        width: 200px;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 0px 3px;
+    }
+    .popup-content img {
+        width: 75;
+        max-height: 75%;
+    }
+    .colabore-page .colabore-main .title {
+        font-size: 22px;
+    }
+    .colabore-page .colabore-main .container-grid {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 18px;
+        padding: 20px;
+        max-width: 1000px;
+    }
+}

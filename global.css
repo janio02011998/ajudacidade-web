@@ -1,0 +1,20 @@
+:root {
+    font-size: 60%;
+    --color-background-colabore: #AADA8F;
+    --color-pattern-green: #85E674; 
+    --color-pattern-yellow: #ECC247; 
+    --color-background-green: #AADA8F; 
+    --color-little-green: #B7F557; 
+    --color-white: #FFFFFF; 
+    --color-gradient-green1: #7FCA21; 
+    --color-gradient-green2: #105200; 
+    --color-gradient-yellow1: #E5C64C; 
+    --color-gradient-yellow2: #CFE54B; 
+    --color-gradient-green-btn-text: #6DF538; 
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}

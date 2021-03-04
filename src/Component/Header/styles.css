@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+
+.header-page {
+    width: 100vw;
+    background: var(--color-background-header);
+}
+
+.header-page .header-top-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 2rem;
+}
+
+.header-page .header-top-bar .dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.header-page .header-top-bar .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 20px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    padding: 12px 16px;
+    border-radius: 8px;
+    z-index: 1;
+    margin: 2px 0px 0px 0px;
+}
+
+.header-page .header-top-bar .dropdown-content p{
+    font-size: 12px;
+    border-color: 1px solid #000000;
+    cursor: pointer;
+}
+
+.header-page .header-top-bar .dropdown:hover .dropdown-content {
+    display: block;
+    transition-delay: 2s;
+}
+
+.header-page .header-top-bar img {
+    width: 22.5px;
+    height: 22.5px;
+    cursor: pointer;
+    margin-top: 2px;
+
+}
+
+.header-page .header-top-bar .circle-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    background: var(--color-background-header);
+    border-radius: 50%;
+    /* display: block; */
+    width: 52px;
+    height: 52px;
+    border: 1px solid #FFF;
+}
+
+.header-page .header-top-bar .image-login {
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    margin-top: 4px;
+}
+
+.header-page .header-top-bar .title {
+    color: #FFF;
+    font: 400 1.25rem Capriola;
+    font-size: 2.3rem;
+    text-shadow: 0.2rem 0.1rem #358d43;
+}
+
+.header-page .header-top-bar .circular-content img {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    margin-top: 2px;
+
+}
+
+@media( min-width: 700px) {
+    .header-page .header-top-bar .image-login {
+        width: 27px;
+        height: 27px;
+    }
+    .header-page .header-top-bar .circle-div {
+        width: 38.5px;
+        height: 38.5px;
+    }
+    .header-page .header-top-bar .dropdown-content {
+        margin: 2px 0px 0px 12px;
+    }
+}

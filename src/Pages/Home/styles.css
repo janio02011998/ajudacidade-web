@@ -1,0 +1,159 @@
+.home-page {
+    background-image: linear-gradient(180.02deg, #F0C146 0.01%, rgba(95, 231, 58, 0.69) 103.5%);
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    flex-direction: column;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    position: fixed;
+}
+
+.home-page .header {
+    position: fixed;
+    top: 0px;
+}
+
+.home-page .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.home-page .content .content-top {
+    margin-top: -10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.home-page .content .content-top img {
+    height: 100%;
+    max-width: 300px;
+
+}
+
+.home-page .content .content-top .titulo {
+    color: #FFF;
+    font: 400 1.25rem Capriola;
+    text-shadow: 0.2rem 0.1rem #358d43;
+    margin-top: 1.25rem;
+}
+
+.home-page .content .inputs {
+    display: flex;
+    flex-direction: row;
+    margin-top: 1rem;
+}
+
+.home-page .content .input-link   {
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem;
+}
+
+.home-page .content .input-link a {
+    width: 15rem;
+    height: 8rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 0.8rem;
+    border-color: #4e9017;
+    background-image: linear-gradient(180.02deg, #F0C146 0.01%, rgba(95, 231, 58, 0.69) 103.5%);
+    
+    color: #FFF;
+    text-decoration: none;
+    font: 700 1.5rem Roboto;
+}
+
+.home-page .content .input-link a:first-child {
+    margin-right: 1.6rem;
+    background: linear-gradient(90deg, rgba(127, 202, 33, 0.8) 0%, #105200 100%);
+}
+
+.home-page .content .input-link a:last-child {
+    background: var( --color-white);
+    color: var(--color-gradient-green-btn-text);
+}   
+
+.home-page .content h1 {
+    color: #FFF;
+    font: 400 1.25rem Capriola;
+    text-shadow: 0.2rem 0.1rem #358d43;
+}
+
+.home-page .content h1>a {
+    cursor: pointer;
+    color: #ebff00;
+    text-decoration: none;
+    font: 400 1.25rem Capriola;
+}
+
+.home-page .content h1>a:hover {
+    cursor: pointer;
+}
+
+.home-page .content .entrarSemLogin {
+    margin-top: 4.1rem;
+    font-size: 1.25rem;
+}
+
+.home-page .footer {
+    display: flex;
+    justify-content: center;
+}
+
+.home-page .footer img {
+    position: absolute;
+    width: 100%;
+    right: 0;
+    bottom: 0;
+}
+
+@media (max-width:280px){
+
+    .home-page .content .content-top img {
+        max-width: 250px;
+    }
+    
+    .home-page .content .content-top .titulo {
+        text-align: center;
+    }
+
+    .home-page .content .input-link{
+        text-align: center;
+    }
+
+    .home-page .content .input-link a {
+        width: 12rem;
+    }
+}
+
+@media (min-width: 700px) {
+    :root {
+        font-size: 65%;
+    }
+    .home-page .content {
+        top: -10rem;
+    }
+    .home-page .content .inputs input {
+        font-size: 1.4rem;
+    }
+    .home-page .content .content-top img {
+        max-width: 450px;
+    }
+    .home-page .content .content-top .titulo {
+        font-size: 1.4rem;
+    }
+    .home-page .footer img {
+        bottom: 0;
+    }
+}
